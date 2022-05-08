@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Project Header -->
+<div class="header">
+    <h2>Library project</h2>
+</div>
+
+<!--Project container  -->
+<div class="container">
+    <button type="submit" class="modal-button" value="Book ">+Add a book</button>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form class="add-book-form" id="addBookForm">
+                <h3>Add new book</h3>
+                <input class="input" type="text" id="title" placeholder="Title">
+                <input class="input" type="text" id="author" placeholder="Author">
+                <input class="input" type="text" id="pages" placeholder="Pages">
+                <div class="is-read">
+                    <label>Have you read it?</label>
+                    <input class="checkbox" type="checkbox" id="isRead">
+                </div>
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="card-grid" id="card"></div>
+
+<footer class="footer">
+    <p>
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        GeorgiosDev
+    </p>
+    <a href="https://github.com/GeorgiosDev" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i></a>
+</footer>
+<script  src="app.js" defer></script>
+</body>
